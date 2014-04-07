@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-# mimis-cookbook cookbook
-
-# Requirements
-
-# Usage
-
-# Attributes
-
-# Recipes
-
-# Author
-
-Author:: YOUR_NAME (<YOUR_EMAIL>)
 =======
 Mimisbrunnr
 =========
@@ -156,4 +142,3 @@ License
 -------
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
->>>>>>> 45e8f49b07d1ac588469c2ea3ef39330663889c6
