@@ -34,6 +34,7 @@ nginx_site node['mimis-cookbook']['site_name'] do
 	cookbook 'nginx'
 	server_name 'example.com'
 	docroot "/#{node['mimis-cookbook']['site_name']}"
+	template 'templates/default/nginx-puma.erb'
 end
 
 include_recipe 'oh-my-zsh'
