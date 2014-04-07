@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+.vagrant
+Berksfile.lock
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+/cookbooks
+
+# Bundler
+Gemfile.lock
+bin/*
+.bundle/*
+
+=======
 #----------------------------------------------------------------------------
 # Ignore these files when commiting to a git repository.
 #
@@ -78,3 +95,4 @@ pickle-email-*.html
 # Environment files that may contain sensitive data
 .env
 .powenv
+>>>>>>> 45e8f49b07d1ac588469c2ea3ef39330663889c6
