@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
   config.omnibus.chef_version = :latest
   config.vm.network :private_network, ip: "33.33.33.10"
   config.vm.boot_timeout = 120
-  config.vm.synced_folder '../', '/mimisbrunner'
+  config.vm.synced_folder '../', '/mimisbrunnr'
   config.berkshelf.enabled = true
 
   config.vm.provision :chef_solo do |chef|

@@ -30,11 +30,15 @@ nginx_site 'default' do
 	enable false
 end
 
-nginx_site node['mimis-cookbook']['site_name'] do
-	cookbook 'nginx'
-	server_name 'example.com'
-	docroot "/#{node['mimis-cookbook']['site_name']}"
-	template 'templates/default/nginx-puma.erb'
+# nginx_site node['mimis-cookbook']['site_name'] do
+# 	cookbook 'nginx'
+# 	server_name 'example.com'
+# 	docroot "/#{node['mimis-cookbook']['site_name']}"
+# 	template 'nginx-puma.erb'
+# end
+template "#{node['nginx']['dir']}/sites-available/#{node['mimis-cookbook']['site_name']}" do
+	source 'nginx-puma.erb'
+	notifies :restart, 'service[nginx]'
 end
 
 include_recipe 'oh-my-zsh'

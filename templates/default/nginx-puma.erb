@@ -1,5 +1,5 @@
 upstream <%= node['mimis-cookbook']['site_name'] %> {
-  server unix:///var/run/<%= node['mimis-cookbook']['site_name'] %>.sock;
+  server unix:///sockets/mimir.sock;
 }
 
 server {
